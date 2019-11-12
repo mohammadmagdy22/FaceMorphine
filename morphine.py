@@ -433,35 +433,6 @@ def part_3():
     cv2.imwrite(path+"three_del.jpg", image)
 
 def part_4():
-    img_list = []
-    # CALCULATION TRANSFORM MATRIX OF POINTS
-    source_points = np.array([[200,20], [400,100], [200,300]]).astype(float)
-    target_points = np.array([[400,300], [450,150], [600,200]])
-    transform_points = (target_points - source_points)/20
-
-    # CALCULATION TRANSFORM MATRIX OF COLOR
-    source_color = np.array([30, 120, 240]).astype(float)
-    target_color = np.array([240, 30, 120])
-    transform_color = (target_color - source_color)/20
-
-
-    for i in range(0,20):
-        image = np.zeros((600,600,3), np.uint8)
-        c = list(source_color)
-        # DRAWING TRIANGLES
-        cv2.polylines(image, [source_points.astype(int)], isClosed=True, color=c, thickness=1)
-        cv2.fillPoly(image, [source_points.astype(int)], color=c)
-
-        source_points += transform_points
-        source_color += transform_color
-
-        reverted = image[:, :, ::-1]
-        img_list.append(reverted)
-
-    # MAKING VIDEO
-    video_maker(img_list, file_name="triangle", fps=20)
-
-def part_5():
     img_dmns = (360, 480)
     img_list = []
     lndmrks_list = []
@@ -520,4 +491,3 @@ img_dmns = (330, 440)
 # part_2()
 # part_3()
 # part_4()
-# part_5()

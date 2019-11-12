@@ -12,6 +12,6 @@ Part 2: Human landmarks to cat\
 Part 3: Delaunay Triangulation\
 Part 4: Face Morphing
 
-![FaceMorphine](Results/walter3.gif)\
+![FaceMorphine](Results/walter3.gif)
 ----
 ![FaceMorphine](Results/three_del.jpg)

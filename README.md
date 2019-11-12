@@ -7,10 +7,10 @@ opencv
 numpy
 
 
-Part 1: Showing the landmark points
-Part 2: Human landmarks to cat
-Part 3: Delaunay Triangulation
-Part 4: Face Morphing
+Part 1: Showing the landmark points\
+Part 2: Human landmarks to cat\
+Part 3: Delaunay Triangulation\
+Part 4: Face Morphing\
 
-![FaceMorphine](Results/walter3.gif)
+![FaceMorphine](Results/walter3.gif)\\
 ![FaceMorphine](Results/three_del.jpg)
